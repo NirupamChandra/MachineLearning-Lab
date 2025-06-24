@@ -13,7 +13,7 @@ model = LinearRegression()
 model.fit(x_train, y_train)
 
 x_in = [5, 12]
-y_out = model.predict(np.array([x_in]).reshape(-1, 1))
+y_out = model.predict(np.array(x_in).reshape(-1, 1))
 print(y_out)
 
 y_pred = model.predict(x_test)
